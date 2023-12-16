@@ -1,0 +1,34 @@
+<H1>Новости - Главная страница</H1>
+{% endblock %}<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles1.css') }}">
+    <title>
+        {% block title %}
+        Базовый шаблон
+        {% endblock %}
+    </title>
+</head>
+<header>
+    <H2>Новости</H2>
+    <table class="menu">
+        <tr>
+            <td class="menu-td"><a href="/">Главная</a></td>
+            <td class="menu-td"><a href="{{ url_for ('news') }}">Новости сегодня</a></td>
+        </tr>
+    </table>
+    <hr>
+</header>
+<body>
+{% block content %}
+<p>Место для Вашей ракламы т. +777322022</p>
+{% endblock %}
+</body>
+
+<footer>
+    <hr>
+    <H4>Расзрешено свободное использоание материалов сайта</H4>
+
+</footer>
+</html>

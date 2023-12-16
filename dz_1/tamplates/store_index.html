@@ -1,0 +1,13 @@
+{% extends "store.html"%}
+{% block content %}
+    <h1>Магазин главная страница</h1>
+    <h2>Выберете категорию товара:</h2>
+    <ul>
+        {% for cat in category %}
+        <li>
+            <a href="{{ url_for(cat.func_name) }}">{{ cat.title }}</a>
+        </li>
+        {% endfor %}
+		<p>Расзрешено свободное использоание материалов сайта</p> 
+    </ul>
+{% endblock %}
