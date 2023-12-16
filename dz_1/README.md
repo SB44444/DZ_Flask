@@ -11,3 +11,4 @@
 Например, создать страницы "Одежда", "Обувь" и "Куртка", используя базовый шаблон.  
 
 https://github.com/SB44444/DZ_Flask.git
+https://github.com/SB44444/DZ_Flask/tree/master/dz_1
