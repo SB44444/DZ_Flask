@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница сайта
+{% endblock %}
+{% block content %}
+{% if num%}
+    <p>Число {{num}} в квадрате равно {{res}}</p>
+{% endif %}
+<form method="post">
+    <input type="text" name="number">
+    <input type="submit" value="Вычислить кадрат целого числа">
+</form>
+{% endblock %}

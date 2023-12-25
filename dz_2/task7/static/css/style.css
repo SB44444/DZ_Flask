@@ -1,0 +1,40 @@
+html{
+    background-color: rgba(120, 177, 237, 0.8);
+}
+
+H3 {
+    color: red;
+    text-align: left;
+}
+
+H4 {
+    color: rgba(10, 112, 32, 0.95);
+    text-align: left;
+}
+
+H5 {
+    text-align: right;
+    color: blue;
+}
+H6 {
+    text-align: left;
+    color: blue;
+}
+body {
+    width:70%;
+    margin: auto;
+}
+H2 {
+    color: rgba(44, 3, 148, 0.95);
+    text-align: left;
+    color: blue;
+    font: veranda;
+}
+
+.main-href {
+    width: 100px;
+    float: left;
+    margin: 4px 10px 2px 0px;
+    border: 2px;
+    align: center;
+    }
