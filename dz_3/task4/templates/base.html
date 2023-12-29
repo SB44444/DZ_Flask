@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>
+        {% block title %}
+        базовый шаблон
+        {% endblock %}
+    </title>
+</head>
+<body>
+<header>
+    <a href="{{ url_for('index') }}"><img class="main-href" src=""></a>
+    <br>
+    <H2>Форма проверки возраста</H2>
+    <br>
+    <hr>
+</header>
+
+{% block content %}
+Контент сайта
+{% endblock content %}
+<footer>
+    <hr>
+    <H6>Расзрешено свободное использоание материалов сайта</H6>
+</footer>
+</body>
+</html>

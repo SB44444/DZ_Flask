@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+<H4>Зарегистрированные пользователи</H4>
+<ul>
+    {% for User, items in User.items() %}
+    <li>{{ student }}
+    <ul>
+        {% if items %}
+            {% for item in items %}
+                <li>{{ item.score }} {{item.stud_item}}</li>
+            {% endfor %}
+    </ul>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content%}
