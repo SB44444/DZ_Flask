@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+</head>
+<body>
+{% block content %}
+<h2>Список задач</h2>
+{% if tasks %}
+{% for task in tasks %}
+<div>
+    <p>Номер: {{task.task_id}}. Заголовок: {{task.title}}. Описание: {{task.description}}. {{task.date_}}
+        Статус задачи:
+        {% if task.status %}
+            выполнена
+        {% else %}
+            не выполнена
+        {% endif %}
+    </p>
+</div>
+{% endfor %}
+{% else %}
+<div>
+    <p>Список задач пуст</p>
+</div>
+{% endif %}
+<form method=post action="/tasks/">
+    <input type="number" name="task_id" placeholder="ID номер задачи">
+    <input type="text" name="title" placeholder="Задача">
+    <input type="text" name="description" placeholder="Описание">
+    <input type="checkbox" name="status" id="status_check" placeholder="Статус">
+    <label for="status_check">Выполнена</label>
+    <input type="text" value="2020.01.01" name="date_" placeholder="Дата"/>
+    <button type="submit">Сохранить / Создать новую задачу</button>
+</form>
+{% endblock %}
+</body>
+<footer>
+    <hr>
+    <H6>Расзрешено свободное использоание материалов сайта</H6>
+</footer>
+</html>

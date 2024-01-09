@@ -9,3 +9,4 @@ class Task(BaseModel):
     description: Optional[str] = None
     date_ = datetime
     status: bool = False
+
